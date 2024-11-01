@@ -1,5 +1,5 @@
 CFLAGS += -Werror -Wall
 
-looter.so: looter.c
+pam_self.so: self.c
 	gcc $(CFLAGS) -fPIC -shared -Xlinker -x -o $@ $< -lcurl
 
